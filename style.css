@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  border: 1px solid rgb(230, 224, 224);
+
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.cal-screen {
+  width: 230px;
+  max-width: 230px;
+  overflow-x: hidden;
+  max-height: auto;
+  position: relative;
+  padding: 20px;
+  height: 200px;
+  background-color: rgb(250, 250, 250);
+}
+.equationDisplayer {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  font-size: 1.8em;
+}
+.resultDisplayer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5em;
+}
+.keypad {
+  position: relative;
+  padding: 10px;
+}
+.button {
+  margin: 0px;
+  font-size: 1.2em;
+  font-weight: bolder;
+  /* border: 1px solid black; */
+  border: none;
+  height: 48px;
+  width: 59px;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.operator,
+.clear-btn,
+.clear-all-btn {
+  color: rgb(1, 188, 99);
+  font-weight: bolder;
+}
+.equal-button {
+  height: 80px;
+  width: 40px;
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  font-size: 1.5em;
+  border: none;
+  color: white;
+  background-color: rgb(1, 188, 99);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.pad-click-style {
+  background-color: rgb(9, 255, 136);
+}

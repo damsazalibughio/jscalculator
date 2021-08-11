@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="calculator" class="calculator">
+            <div class='cal-screen'>
+                <div>
+                    <span id="equationDisplayer" class="equationDisplayer"></span>
+                </div>
+                <div>
+                    <span id="resultDisplayer" class="resultDisplayer"></span>
+                </div>
+             </div>
+            <div class="keypad">
+                <div class="row">
+                <button class="button clear-all-btn " id="allClear" value="C" onclick="clearAll()">C</button>
+                <button class="button operator" id="keyCodeDivide" value="operator" onclick="getValue('/')">÷</button>
+                <button class="button operator" id="keyCodeMultiplay" value="operator" onclick="getValue('*')">×</button>
+
+                <button class="button clear-btn" id="clearLast" onclick=" clearLast()" value="CE" >CE</button>
+
+                </div>
+                <div class="row">
+                <button class="button calc-num" id="keyCode7" value="7" onclick="getValue(7)">7</button>
+                <button class="button calc-num" id="keyCode8" value="8" onclick="getValue(8)">8</button>
+                <button class="button calc-num" id="keyCode9" value="9" onclick="getValue(9)">9</button>
+                <button class="button operator" id="keyCode" value="operator" onclick="getValue('-')">−</button>
+
+                </div>
+                <div class="row">
+                <button class="button calc-num" id="keyCode4" value="4" onclick="getValue(4)">4</button>
+                <button class="button calc-num" id="keyCode5" value="5" onclick="getValue(5)">5</button>
+                <button class="button calc-num" id="keyCode6" value="6" onclick="getValue(6)">6</button>
+                <button class="button operator" id="keyCodePlus" value="operator" onclick="getValue('+')">+</button>
+
+                </div>
+                <div class="row">
+                <button class="button calc-num" id="keyCode1" value="1" onclick="getValue(1)">1</button>
+                <button class="button calc-num" id="keyCode2" value="2" onclick="getValue(2)">2</button>
+                <button class="button calc-num" id="keyCode3" value="3" onclick="getValue(3)">3</button>
+        
+                </div>
+                <div class="row">
+                <button class="button calc-num" id="keyCodeDot" onclick="getValue('.')" value=".">.</button>
+
+                <button class="button calc-num" id="keyCode0" value="0" onclick="getValue(0)">0</button>
+                
+                <button class="button" id="keyCodePercent" value="%"  onclick="getValue('%')">%</button>
+                <button class="equal-button operator" id="keyCodeEqual" onclick="getResult()" value="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
